@@ -30,7 +30,7 @@ class Artist
     self.all.detect { |artist| artist.name == name }
   end
 
-  def self.create(name)   #class method creates & stores instances vs initializing
+  def self.create(name)  
     artist = Artist.new(name)
     artist.save
     artist
